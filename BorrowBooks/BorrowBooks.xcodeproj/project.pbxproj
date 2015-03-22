@@ -17,6 +17,8 @@
 		A3E46C271ABAFB9B006EC12C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E46C261ABAFB9B006EC12C /* Images.xcassets */; };
 		A3E46C2A1ABAFB9B006EC12C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3E46C281ABAFB9B006EC12C /* LaunchScreen.xib */; };
 		A3E46C361ABAFB9C006EC12C /* BorrowBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E46C351ABAFB9C006EC12C /* BorrowBooksTests.swift */; };
+		A3F526C21ABEFE9300BFBE2A /* log-in-user.png in Resources */ = {isa = PBXBuildFile; fileRef = A3F526C01ABEFE9300BFBE2A /* log-in-user.png */; };
+		A3F526C31ABEFE9300BFBE2A /* log-out-user.png in Resources */ = {isa = PBXBuildFile; fileRef = A3F526C11ABEFE9300BFBE2A /* log-out-user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		A3E46C2F1ABAFB9C006EC12C /* BorrowBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorrowBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E46C341ABAFB9C006EC12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3E46C351ABAFB9C006EC12C /* BorrowBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorrowBooksTests.swift; sourceTree = "<group>"; };
+		A3F526C01ABEFE9300BFBE2A /* log-in-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log-in-user.png"; sourceTree = "<group>"; };
+		A3F526C11ABEFE9300BFBE2A /* log-out-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "log-out-user.png"; sourceTree = "<group>"; };
 		D970297D99C7A9B44E92146F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +246,7 @@
 		A3E46C1D1ABAFB9B006EC12C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3F526BF1ABEFE9300BFBE2A /* Resource */,
 				A3E46C1E1ABAFB9B006EC12C /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -262,6 +267,15 @@
 				A3E46C341ABAFB9C006EC12C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3F526BF1ABEFE9300BFBE2A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A3F526C01ABEFE9300BFBE2A /* log-in-user.png */,
+				A3F526C11ABEFE9300BFBE2A /* log-out-user.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		B6EB12CF80568695CADFF98A /* Pods */ = {
@@ -355,7 +369,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F526C21ABEFE9300BFBE2A /* log-in-user.png in Resources */,
 				A3E46C251ABAFB9B006EC12C /* Main.storyboard in Resources */,
+				A3F526C31ABEFE9300BFBE2A /* log-out-user.png in Resources */,
 				A3E46C2A1ABAFB9B006EC12C /* LaunchScreen.xib in Resources */,
 				A3E46C271ABAFB9B006EC12C /* Images.xcassets in Resources */,
 			);

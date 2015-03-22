@@ -8,7 +8,9 @@
 
 import UIKit
 
-class BBMoreViewController: UIViewController {
+class BBMoreViewController: UITableViewController {
+    
+//    var sectionArray
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +23,34 @@ class BBMoreViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        var rows: Int
+        
+        switch section {
+        case 0:
+            rows = 2
+        case 1:
+            rows = 3
+        case 2:
+            rows = 1
+        default:
+            rows = 0
+        }
+        
+        return rows
+    }
+
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        return 3
+    }
+    
+//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+//        return 1
+//    }
+//    
+//    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        return 1
+//    }
 
     /*
     // MARK: - Navigation
