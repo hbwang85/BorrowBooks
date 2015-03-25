@@ -12,6 +12,9 @@
 		A3732CDD1ABC1EBC0080D37A /* BBMyBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732CDC1ABC1EBC0080D37A /* BBMyBooksViewController.swift */; };
 		A3732CDF1ABC1F190080D37A /* BBColleaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732CDE1ABC1F190080D37A /* BBColleaguesViewController.swift */; };
 		A3732CE11ABC1F580080D37A /* BBMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3732CE01ABC1F580080D37A /* BBMoreViewController.swift */; };
+		A374AFE01ABFC5DF00908B1F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A374AFDF1ABFC5DF00908B1F /* Login.storyboard */; };
+		A374C8661AC2AAE500908B1F /* BBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374C8651AC2AAE500908B1F /* BBLoginViewController.swift */; };
+		A374C86A1AC2B85300908B1F /* AccountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374C8691AC2B85300908B1F /* AccountTableCell.swift */; };
 		A3E46C201ABAFB9B006EC12C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */; };
 		A3E46C251ABAFB9B006EC12C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E46C231ABAFB9B006EC12C /* Main.storyboard */; };
 		A3E46C271ABAFB9B006EC12C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E46C261ABAFB9B006EC12C /* Images.xcassets */; };
@@ -38,6 +41,9 @@
 		A3732CDC1ABC1EBC0080D37A /* BBMyBooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMyBooksViewController.swift; sourceTree = "<group>"; };
 		A3732CDE1ABC1F190080D37A /* BBColleaguesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBColleaguesViewController.swift; sourceTree = "<group>"; };
 		A3732CE01ABC1F580080D37A /* BBMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMoreViewController.swift; sourceTree = "<group>"; };
+		A374AFDF1ABFC5DF00908B1F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A374C8651AC2AAE500908B1F /* BBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBLoginViewController.swift; sourceTree = "<group>"; };
+		A374C8691AC2B85300908B1F /* AccountTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableCell.swift; sourceTree = "<group>"; };
 		A3E46C1A1ABAFB9B006EC12C /* BorrowBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorrowBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E46C1E1ABAFB9B006EC12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 		A3732CCD1ABC1DFE0080D37A /* More */ = {
 			isa = PBXGroup;
 			children = (
+				A374AFDE1ABFC5C500908B1F /* Storyboard */,
 				A3732CCE1ABC1DFE0080D37A /* Controller */,
 				A3732CCF1ABC1DFE0080D37A /* Model */,
 				A3732CD01ABC1DFE0080D37A /* View */,
@@ -125,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				A3732CE01ABC1F580080D37A /* BBMoreViewController.swift */,
+				A374C8651AC2AAE500908B1F /* BBLoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -139,6 +147,7 @@
 		A3732CD01ABC1DFE0080D37A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A374C8691AC2B85300908B1F /* AccountTableCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +216,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A374AFDE1ABFC5C500908B1F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A374AFDF1ABFC5DF00908B1F /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		A3E46C111ABAFB9B006EC12C = {
 			isa = PBXGroup;
 			children = (
@@ -234,10 +251,6 @@
 				A3732CCD1ABC1DFE0080D37A /* More */,
 				A3732CD21ABC1DFE0080D37A /* Search */,
 				A3732CC91ABC1DF50080D37A /* Colleagues */,
-				A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */,
-				A3E46C231ABAFB9B006EC12C /* Main.storyboard */,
-				A3E46C261ABAFB9B006EC12C /* Images.xcassets */,
-				A3E46C281ABAFB9B006EC12C /* LaunchScreen.xib */,
 				A3E46C1D1ABAFB9B006EC12C /* Supporting Files */,
 			);
 			path = BorrowBooks;
@@ -246,6 +259,10 @@
 		A3E46C1D1ABAFB9B006EC12C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */,
+				A3E46C231ABAFB9B006EC12C /* Main.storyboard */,
+				A3E46C261ABAFB9B006EC12C /* Images.xcassets */,
+				A3E46C281ABAFB9B006EC12C /* LaunchScreen.xib */,
 				A3F526BF1ABEFE9300BFBE2A /* Resource */,
 				A3E46C1E1ABAFB9B006EC12C /* Info.plist */,
 			);
@@ -371,6 +388,7 @@
 			files = (
 				A3F526C21ABEFE9300BFBE2A /* log-in-user.png in Resources */,
 				A3E46C251ABAFB9B006EC12C /* Main.storyboard in Resources */,
+				A374AFE01ABFC5DF00908B1F /* Login.storyboard in Resources */,
 				A3F526C31ABEFE9300BFBE2A /* log-out-user.png in Resources */,
 				A3E46C2A1ABAFB9B006EC12C /* LaunchScreen.xib in Resources */,
 				A3E46C271ABAFB9B006EC12C /* Images.xcassets in Resources */,
@@ -424,7 +442,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A374C8661AC2AAE500908B1F /* BBLoginViewController.swift in Sources */,
 				A3732CDF1ABC1F190080D37A /* BBColleaguesViewController.swift in Sources */,
+				A374C86A1AC2B85300908B1F /* AccountTableCell.swift in Sources */,
 				A3732CE11ABC1F580080D37A /* BBMoreViewController.swift in Sources */,
 				A3732CD71ABC1DFE0080D37A /* BBSearchViewController.swift in Sources */,
 				A3E46C201ABAFB9B006EC12C /* AppDelegate.swift in Sources */,
