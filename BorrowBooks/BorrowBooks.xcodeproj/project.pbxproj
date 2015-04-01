@@ -15,6 +15,8 @@
 		A374AFE01ABFC5DF00908B1F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A374AFDF1ABFC5DF00908B1F /* Login.storyboard */; };
 		A374C8661AC2AAE500908B1F /* BBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374C8651AC2AAE500908B1F /* BBLoginViewController.swift */; };
 		A374C86A1AC2B85300908B1F /* AccountTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374C8691AC2B85300908B1F /* AccountTableCell.swift */; };
+		A374C8C81ACA68E600908B1F /* BBRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374C8C71ACA68E600908B1F /* BBRegisterViewController.swift */; };
+		A374C9031ACA6B3E00908B1F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A374C9021ACA6B3E00908B1F /* DataManager.swift */; };
 		A3E46C201ABAFB9B006EC12C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */; };
 		A3E46C251ABAFB9B006EC12C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3E46C231ABAFB9B006EC12C /* Main.storyboard */; };
 		A3E46C271ABAFB9B006EC12C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3E46C261ABAFB9B006EC12C /* Images.xcassets */; };
@@ -44,6 +46,9 @@
 		A374AFDF1ABFC5DF00908B1F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A374C8651AC2AAE500908B1F /* BBLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBLoginViewController.swift; sourceTree = "<group>"; };
 		A374C8691AC2B85300908B1F /* AccountTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableCell.swift; sourceTree = "<group>"; };
+		A374C8C71ACA68E600908B1F /* BBRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBRegisterViewController.swift; sourceTree = "<group>"; };
+		A374C9021ACA6B3E00908B1F /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		A374C9041ACA773C00908B1F /* BorrowBooks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "BorrowBooks-Bridging-Header.h"; path = "Util/BorrowBooks-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3E46C1A1ABAFB9B006EC12C /* BorrowBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorrowBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3E46C1E1ABAFB9B006EC12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +138,7 @@
 			children = (
 				A3732CE01ABC1F580080D37A /* BBMoreViewController.swift */,
 				A374C8651AC2AAE500908B1F /* BBLoginViewController.swift */,
+				A374C8C71ACA68E600908B1F /* BBRegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +230,14 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		A374C9011ACA6A5800908B1F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A374C9021ACA6B3E00908B1F /* DataManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		A3E46C111ABAFB9B006EC12C = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +261,7 @@
 		A3E46C1C1ABAFB9B006EC12C /* BorrowBooks */ = {
 			isa = PBXGroup;
 			children = (
+				A374C9011ACA6A5800908B1F /* Util */,
 				A3732CD81ABC1E900080D37A /* MyBooks */,
 				A3732CCD1ABC1DFE0080D37A /* More */,
 				A3732CD21ABC1DFE0080D37A /* Search */,
@@ -259,6 +274,7 @@
 		A3E46C1D1ABAFB9B006EC12C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A374C9041ACA773C00908B1F /* BorrowBooks-Bridging-Header.h */,
 				A3E46C1F1ABAFB9B006EC12C /* AppDelegate.swift */,
 				A3E46C231ABAFB9B006EC12C /* Main.storyboard */,
 				A3E46C261ABAFB9B006EC12C /* Images.xcassets */,
@@ -443,11 +459,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A374C8661AC2AAE500908B1F /* BBLoginViewController.swift in Sources */,
+				A374C8C81ACA68E600908B1F /* BBRegisterViewController.swift in Sources */,
 				A3732CDF1ABC1F190080D37A /* BBColleaguesViewController.swift in Sources */,
 				A374C86A1AC2B85300908B1F /* AccountTableCell.swift in Sources */,
 				A3732CE11ABC1F580080D37A /* BBMoreViewController.swift in Sources */,
 				A3732CD71ABC1DFE0080D37A /* BBSearchViewController.swift in Sources */,
 				A3E46C201ABAFB9B006EC12C /* AppDelegate.swift in Sources */,
+				A374C9031ACA6B3E00908B1F /* DataManager.swift in Sources */,
 				A3732CDD1ABC1EBC0080D37A /* BBMyBooksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -572,10 +590,13 @@
 			baseConfigurationReference = 1A4B0E0A421E7C66A550E4AD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BorrowBooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BorrowBooks/Util/BorrowBooks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -584,10 +605,12 @@
 			baseConfigurationReference = D970297D99C7A9B44E92146F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BorrowBooks/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BorrowBooks/Util/BorrowBooks-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -79,12 +79,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YhQ-JZ-nbx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="475"/>
+            <point key="canvasLocation" x="775" y="474"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="655-RJ-Ifa">
             <objects>
-                <viewController id="STE-bF-6hl" sceneMemberID="viewController">
+                <viewController id="STE-bF-6hl" customClass="BBRegisterViewController" customModule="BorrowBooks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="alr-yS-yZa"/>
                         <viewControllerLayoutGuide type="bottom" id="Qnj-lK-dVf"/>
@@ -114,6 +114,9 @@
                                 <state key="normal" title="注册">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="register:" destination="STE-bF-6hl" eventType="touchUpInside" id="Me3-xF-hh2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,6 +138,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Jmy-yd-bfc" secondAttribute="trailing" constant="30" id="zZR-Pb-kO7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="Jmy-yd-bfc" id="az7-ZD-imy"/>
+                        <outlet property="passwordConfirmField" destination="ZQx-BD-73V" id="riv-8B-GIF"/>
+                        <outlet property="passwordField" destination="JK7-tk-bj5" id="0eE-e2-vBc"/>
+                        <outlet property="registerButton" destination="gOb-RD-f47" id="EJm-Dq-qVt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqL-Vv-Jqv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
